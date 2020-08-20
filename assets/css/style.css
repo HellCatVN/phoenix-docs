@@ -4,10 +4,15 @@
 .command-name{
   margin-bottom: 0px!important;
 }
-/* code {
-  color: #e83e3e!important;
-  background: #abff9a!important;
-} */
+code {
+  color: #e83e8c;
+  background: #e0ffe8;
+}
 .note-bullet{
   color: red
+}
+
+.note > li {
+  font-size: 14px;
+  padding: 0;
 }
