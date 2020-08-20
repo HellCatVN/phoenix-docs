@@ -26,15 +26,9 @@
 
     <!-- FontAwesome JS-->
     <script defer src="assets/fontawesome/js/all.min.js"></script>
-
-    <!-- Plugins CSS -->
-    <link
-      rel="stylesheet"
-      href="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css"
-    />
-
     <!-- Theme CSS -->
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body class="docs-page">
@@ -311,11 +305,113 @@
             <section class="docs-section" id="item-1-1">
               <h2 class="section-heading">Gambling</h2>
               <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id.
+                Group Command Description Here
               </p>
-              <p>Code Example: <code>npm install &lt;package&gt;</code></p>
+              <div id="accordion">
+                <div class="card">
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    <h5 class="command-name text-primary">Blackjack</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>Command Description</p>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse show"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>blackjack</b> [bet amount]</code>
+                      <hr/>
+                      <h6>Alias</h6>
+                      <code><b>bj</b></code>
+                      <hr/>
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr/>
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <p>Maximum bet amount is 40000 <br> If bet amount is <code>all</code> you will bet all your money incase it less than 40000. If you money larger than 40000 <code>all</code> will bet 40000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Collapsible Group Item #2
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Collapsible Group Item #3
+                      </button>
+                    </h5>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
               <h5>Unordered List Examples:</h5>
               <ul>
                 <li>
@@ -1446,8 +1542,6 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Page Specific JS -->
-    <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script>
     <script src="assets/plugins/jquery.scrollTo.min.js"></script>
     <script src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>
     <script src="assets/js/docs.js"></script>

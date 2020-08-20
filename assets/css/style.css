@@ -1,0 +1,13 @@
+.collapse-card {
+  cursor: pointer;
+}
+.command-name{
+  margin-bottom: 0px!important;
+}
+/* code {
+  color: #e83e3e!important;
+  background: #abff9a!important;
+} */
+.note-bullet{
+  color: red
+}
