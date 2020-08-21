@@ -136,20 +136,34 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-2">Section Item 1.2</a>
+              <a class="nav-link scrollto" href="#ecomoney"
+                ><i class="far fa-money-bill-alt"></i> Ecomoney</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-3">Section Item 1.3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-4">Section Item 1.4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-5">Section Item 1.5</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scrollto" href="#item-1-6">Section Item 1.6</a>
-            </li>
+              <a class="nav-link scrollto" href="#images"
+                ><i class="far fa-images"></i> Images</a
+              >
+              <li class="nav-item">
+                <a class="nav-link scrollto" href="#soundboard"
+                  ><i class="fas fa-volume-up"></i> SoundBoard</a
+                >
+                <li class="nav-item">
+                  <a class="nav-link scrollto" href="#utilities"
+                    ><i class="fas fa-tools"></i> Utilities</a
+                  >
+                  <li class="nav-item">
+                    <a class="nav-link scrollto" href="#moderation"
+                      ><i class="fas fa-user-shield"></i> Moderation</a
+                    >
+                    <li class="nav-item">
+                      <a class="nav-link scrollto" href="#social"
+                        ><i class="fas fa-users"></i> Social</a
+                      >
+                      <li class="nav-item">
+                        <a class="nav-link scrollto" href="#other"
+                          ><i class="fas fa-book-reader"></i> Other</a
+                        >
             <li class="nav-item section-title mt-3">
               <a class="nav-link scrollto" href="#section-9"
                 ><span class="theme-icon-holder mr-2"
@@ -190,8 +204,10 @@
               </section>
               <!--//docs-intro-->
             </header>
-            <section class="docs-section" id="item-1-1">
-              <h2 class="section-heading"><i class="fas fa-dice"></i> Gambling</h2>
+            <section class="docs-section" id="gambling">
+              <h2 class="section-heading">
+                <i class="fas fa-dice"></i> Gambling
+              </h2>
               <p>
                 Group Command Description Here
               </p>
@@ -206,11 +222,16 @@
                   >
                     <h5 class="command-name text-primary">Blackjack</h5>
                     <span class="badge badge-primary">gambling</span>
-                    <p>Command Description</p>
+                    <p>
+                      Play a round of blackjack against the bot, controlled by
+                      reactions. The objective is to have a card value as close
+                      to 21 as possible, without exceeding it (known as bust).
+                      Having a card value of exactly 21 is known as a blackjack.
+                    </p>
                   </div>
                   <div
                     id="collapseOne"
-                    class="collapse show"
+                    class="collapse hidden"
                     aria-labelledby="headingOne"
                     data-parent="#accordion"
                   >
@@ -241,565 +262,2550 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        Collapsible Group Item #2
-                      </button>
-                    </h5>
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="true"
+                    aria-controls="collapseTwo"
+                  >
+                    <h5 class="command-name text-primary">Coin Flip</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Flips a coin , when it landing you guess heads or tails
+                    </p>
                   </div>
                   <div
                     id="collapseTwo"
-                    class="collapse"
+                    class="collapse hidden"
                     aria-labelledby="headingTwo"
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      <h6>Usage</h6>
+                      <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>cf</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
+
                 <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button
-                        class="btn btn-link collapsed"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Collapsible Group Item #3
-                      </button>
-                    </h5>
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree"
+                  >
+                    <h5 class="command-name text-primary">Lottery</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
                   </div>
                   <div
                     id="collapseThree"
-                    class="collapse"
+                    class="collapse hidden"
                     aria-labelledby="headingThree"
                     data-parent="#accordion"
                   >
                     <div class="card-body">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. 3 wolf moon officia
-                      aute, non cupidatat skateboard dolor brunch. Food truck
-                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-                      tempor, sunt aliqua put a bird on it squid single-origin
-                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
-                      helvetica, craft beer labore wes anderson cred nesciunt
-                      sapiente ea proident. Ad vegan excepteur butcher vice
-                      lomo. Leggings occaecat craft beer farm-to-table, raw
-                      denim aesthetic synth nesciunt you probably haven't heard
-                      of them accusamus labore sustainable VHS.
+                      <h6>Usage</h6>
+                      <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>cf</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
-              </div>
-              <h5>Unordered List Examples:</h5>
-              <ul>
-                <li>
-                  <strong class="mr-1">HTML5:</strong>
-                  <code>&lt;div id="foo"&gt;</code>
-                </li>
-                <li>
-                  <strong class="mr-1">CSS:</strong>
-                  <code>#foo { color: red }</code>
-                </li>
-                <li>
-                  <strong class="mr-1">JavaScript:</strong>
-                  <code>console.log(&#x27;#foo\bar&#x27;);</code>
-                </li>
-              </ul>
-              <h5>Ordered List Examples:</h5>
-              <ol>
-                <li>Download lorem ipsum dolor sit amet.</li>
-                <li>Click ipsum faucibus venenatis.</li>
-                <li>Configure fermentum malesuada nunc.</li>
-                <li>Deploy donec non ante libero.</li>
-              </ol>
-              <h5>Callout Examples:</h5>
-              <div class="callout-block callout-block-info">
-                <div class="content">
-                  <h4 class="callout-title">
-                    <span class="callout-icon-holder mr-1">
-                      <i class="fas fa-info-circle"></i> </span
-                    ><!--//icon-holder-->
-                    Note
-                  </h4>
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium <code>&lt;code&gt;</code> , Nemo enim
-                    ipsam voluptatem quia voluptas
-                    <a href="#">link example</a> sit aspernatur aut odit aut
-                    fugit.
-                  </p>
-                </div>
-                <!--//content-->
-              </div>
-              <!--//callout-block-->
 
-              <div class="callout-block callout-block-warning">
-                <div class="content">
-                  <h4 class="callout-title">
-                    <span class="callout-icon-holder mr-1">
-                      <i class="fas fa-bullhorn"></i> </span
-                    ><!--//icon-holder-->
-                    Warning
-                  </h4>
-                  <p>
-                    Nunc hendrerit odio quis dignissim efficitur. Proin ut
-                    finibus libero. Morbi posuere fringilla felis eget sagittis.
-                    Fusce sem orci, cursus in tortor
-                    <a href="#">link example</a> tellus vel diam viverra
-                    elementum.
-                  </p>
-                </div>
-                <!--//content-->
-              </div>
-              <!--//callout-block-->
-
-              <div class="callout-block callout-block-success">
-                <div class="content">
-                  <h4 class="callout-title">
-                    <span class="callout-icon-holder mr-1">
-                      <i class="fas fa-thumbs-up"></i> </span
-                    ><!--//icon-holder-->
-                    Tip
-                  </h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    <a href="#">Link example</a> aenean commodo ligula eget
-                    dolor.
-                  </p>
-                </div>
-                <!--//content-->
-              </div>
-              <!--//callout-block-->
-
-              <div class="callout-block callout-block-danger mr-1">
-                <div class="content">
-                  <h4 class="callout-title">
-                    <span class="callout-icon-holder">
-                      <i class="fas fa-exclamation-triangle"></i> </span
-                    ><!--//icon-holder-->
-                    Danger
-                  </h4>
-                  <p>
-                    Morbi eget interdum sapien. Donec sed turpis sed nulla
-                    lacinia accumsan vitae ut tellus. Aenean vestibulum
-                    <a href="#">Link example</a> maximus ipsum vel dignissim.
-                    Morbi ornare elit sit amet massa feugiat, viverra dictum
-                    ipsum pellentesque.
-                  </p>
-                </div>
-                <!--//content-->
-              </div>
-              <!--//callout-block-->
-
-              <h5 class="mt-5">Alert Examples:</h5>
-              <div class="alert alert-primary" role="alert">
-                This is a primary alert—check it out!
-              </div>
-              <div class="alert alert-secondary" role="alert">
-                This is a secondary alert—check it out!
-              </div>
-              <div class="alert alert-success" role="alert">
-                This is a success alert—check it out!
-              </div>
-              <div class="alert alert-danger" role="alert">
-                This is a danger alert—check it out!
-              </div>
-              <div class="alert alert-warning" role="alert">
-                This is a warning alert—check it out!
-              </div>
-              <div class="alert alert-info" role="alert">
-                This is a info alert—check it out!
-              </div>
-              <div class="alert alert-light" role="alert">
-                This is a light alert—check it out!
-              </div>
-              <div class="alert alert-dark" role="alert">
-                This is a dark alert—check it out!
-              </div>
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-1-2">
-              <h2 class="section-heading">Section Item 1.2</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
-              <h5>Image Lightbox Example:</h5>
-              <figure class="figure docs-figure py-3">
-                <a
-                  href="assets/images/features/appify-theme-projects-overview-lg.jpg"
-                  data-title="Image Lightbox Example"
-                  data-toggle="lightbox"
-                  ><img
-                    class="figure-img img-fluid shadow rounded"
-                    src="assets/images/features/appify-add-members.gif"
-                    alt=""
-                    style="width: 600px;"
-                /></a>
-                <figcaption class="figure-caption mt-3">
-                  <i class="fas fa-info-circle mr-2"></i>Credit: the above
-                  screencast is taken from
-                  <a
-                    class="theme-link"
-                    href="https://themes.3rdwavemedia.com/bootstrap-templates/product/appify-bootstrap-4-admin-template-for-app-developers/"
-                    target="_blank"
-                    ><i class="fas fa-external-link-alt"></i>Appify theme</a
-                  >.
-                </figcaption>
-              </figure>
-
-              <h5>Custom Table:</h5>
-              <div class="table-responsive my-4">
-                <table class="table table-bordered">
-                  <tbody>
-                    <tr>
-                      <th class="theme-bg-light">
-                        <a class="theme-link" href="#">Option 1</a>
-                      </th>
-                      <td>
-                        Option 1 desc lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="theme-bg-light">
-                        <a class="theme-link" href="#">Option 2</a>
-                      </th>
-                      <td>
-                        Option 2 desc lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <th class="theme-bg-light">
-                        <a class="theme-link" href="#">Option 3</a>
-                      </th>
-                      <td>
-                        Option 3 desc lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                      </td>
-                    </tr>
-
-                    <tr>
-                      <th class="theme-bg-light">
-                        <a class="theme-link" href="#">Option 4</a>
-                      </th>
-                      <td>
-                        Option 4 desc lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit.
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--//table-responsive-->
-              <h5>Stripped Table:</h5>
-              <div class="table-responsive my-4">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--//table-responsive-->
-              <h5>Bordered Dark Table:</h5>
-              <div class="table-responsive my-4">
-                <table class="table table-bordered table-dark">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!--//table-responsive-->
-            </section>
-            <!--//section-->
-
-            <section class="docs-section" id="item-1-3">
-              <h2 class="section-heading">Section Item 1.3</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
-              <h5>Badges Examples:</h5>
-              <div class="my-4">
-                <span class="badge badge-primary">Primary</span>
-                <span class="badge badge-secondary">Secondary</span>
-                <span class="badge badge-success">Success</span>
-                <span class="badge badge-danger">Danger</span>
-                <span class="badge badge-warning">Warning</span>
-                <span class="badge badge-info">Info</span>
-                <span class="badge badge-light">Light</span>
-                <span class="badge badge-dark">Dark</span>
-              </div>
-              <h5>Button Examples:</h5>
-              <div class="row my-3">
-                <div class="col-md-6 col-12">
-                  <ul class="list list-unstyled pl-0">
-                    <li>
-                      <a href="#" class="btn btn-primary">Primary Button</a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-secondary">Secondary Button</a>
-                    </li>
-                    <li><a href="#" class="btn btn-light">Light Button</a></li>
-                    <li>
-                      <a href="#" class="btn btn-success">Succcess Button</a>
-                    </li>
-                    <li><a href="#" class="btn btn-info">Info Button</a></li>
-                    <li>
-                      <a href="#" class="btn btn-warning">Warning Button</a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-danger">Danger Button</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-md-6 col-12">
-                  <ul class="list list-unstyled pl-0">
-                    <li>
-                      <a href="#" class="btn btn-primary"
-                        ><i class="fas fa-download mr-2"></i> Download Now</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-secondary"
-                        ><i class="fas fa-book mr-2"></i> View Docs</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-light"
-                        ><i class="fas fa-arrow-alt-circle-right mr-2"></i> View
-                        Features</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-success"
-                        ><i class="fas fa-code-branch mr-2"></i> Fork Now</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-info"
-                        ><i class="fas fa-play-circle mr-2"></i> Find Out Now</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-warning"
-                        ><i class="fas fa-bug mr-2"></i> Report Bugs</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-danger"
-                        ><i class="fas fa-exclamation-circle mr-2"></i> Submit
-                        Issues</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--//row-->
-
-              <h5>Progress Examples:</h5>
-              <div class="my-4">
-                <div class="progress my-4">
+                <div class="card">
                   <div
-                    class="progress-bar bg-success"
-                    role="progressbar"
-                    style="width: 25%;"
-                    aria-valuenow="25"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="progress my-4">
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="true"
+                    aria-controls="collapseFour"
+                  >
+                    <h5 class="command-name text-primary">Baucua</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
+                  </div>
                   <div
-                    class="progress-bar bg-info"
-                    role="progressbar"
-                    style="width: 50%;"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                    id="collapseFour"
+                    class="collapse hidden"
+                    aria-labelledby="headingFour"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>baucua</b> [bet amount] [bau/cua/ca/ga/tom/nai]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>bc</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="progress my-4">
+
+                <div class="card">
                   <div
-                    class="progress-bar bg-warning"
-                    role="progressbar"
-                    style="width: 75%;"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-                <div class="progress my-4">
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="true"
+                    aria-controls="collapseFive"
+                  >
+                    <h5 class="command-name text-primary">RPS</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
+                  </div>
                   <div
-                    class="progress-bar bg-danger"
-                    role="progressbar"
-                    style="width: 100%;"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
+                    id="collapseFive"
+                    class="collapse hidden"
+                    aria-labelledby="headingFive"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>rps</b> [bet amount] [kéo/búa/bao]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>No Alias</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </section>
-            <!--//section-->
 
-            <section class="docs-section" id="item-1-4">
-              <h2 class="section-heading">Section Item 1.4</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
+                <div class="card">
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseSix"
+                    aria-expanded="true"
+                    aria-controls="collapseSix"
+                  >
+                    <h5 class="command-name text-primary">Slot</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    class="collapse hidden"
+                    aria-labelledby="headingSix"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>slot</b> [bet amount]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>No Alias</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-              <h5>Pagination Example:</h5>
-              <nav aria-label="Page navigation example">
-                <ul class="pagination pl-0">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#">Previous</a>
-                  </li>
-                  <li class="page-item active">
-                    <a class="page-link" href="#">1</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
+                <div class="card">
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseSeven"
+                    aria-expanded="true"
+                    aria-controls="collapseSeven"
+                  >
+                    <h5 class="command-name text-primary">Drop</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    class="collapse hidden"
+                    aria-labelledby="headingSeven"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>drop</b> [bet amount]</code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>No Alias</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          Maximum bet amount is 40000
+                        </li>
+                        <li>
+                          Minimum bet amount is 1
+                        </li>
+                        <li>
+                          If bet amount is <code>all</code> you will bet all
+                          your money incase it less than 40000. If you money
+                          larger than 40000 <code>all</code> will bet 40000
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
 
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
-            </section>
-            <!--//section-->
-            <section class="docs-section" id="item-1-5">
-              <h2 class="section-heading">Section Item 1.5</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
-            </section>
-            <!--//section-->
-            <section class="docs-section" id="item-1-6">
-              <h2 class="section-heading">Section Item 1.6</h2>
-              <p>
-                Vivamus efficitur fringilla ullamcorper. Cras condimentum
-                condimentum mauris, vitae facilisis leo. Aliquam sagittis purus
-                nisi, at commodo augue convallis id. Sed interdum turpis quis
-                felis bibendum imperdiet. Mauris pellentesque urna eu leo
-                gravida iaculis. In fringilla odio in felis ultricies porttitor.
-                Donec at purus libero. Vestibulum libero orci, commodo nec arcu
-                sit amet, commodo sollicitudin est. Vestibulum ultricies
-                malesuada tempor.
-              </p>
-            </section>
-            <!--//section-->
+                <div class="card">
+                  <div
+                    class="card-header collapse-card"
+                    data-toggle="collapse"
+                    data-target="#collapseEight"
+                    aria-expanded="true"
+                    aria-controls="collapseEight"
+                  >
+                    <h5 class="command-name text-primary">Pick</h5>
+                    <span class="badge badge-primary">gambling</span>
+                    <p>
+                      Command Description
+                    </p>
+                  </div>
+                  <div
+                    id="collapseEight"
+                    class="collapse hidden"
+                    aria-labelledby="headingEight"
+                    data-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <h6>Usage</h6>
+                      <code>p.<b>pick</b></code>
+                      <hr />
+                      <h6>Alias</h6>
+                      <code><b>No Aliases</b></code>
+                      <hr />
+                      <h6>Permission</h6>
+                      <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                      <hr />
+                      <h6><b class="note-bullet">*</b> Note</h6>
+                      <ul class="note">
+                        <li>
+                          No Note
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+            <section class="docs-section" id="ecomoney">
+              <section class="docs-section" id="ecomoney">
+                <h2 class="section-heading">
+                  <i class="far fa-money-bill-alt"></i> Ecomoney
+                </h2>
+                <p>
+                  Group Command Description Here
+                </p>
+                <div id="accordion">
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseBalance"
+                      aria-expanded="true"
+                      aria-controls="collapseBalance"
+                    >
+                      <h5 class="command-name text-primary">Balance</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Check Account Money
+                      </p>
+                    </div>
+                    <div
+                      id="collapseBalance"
+                      class="collapse hidden"
+                      aria-labelledby="headingBalance"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>balance</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>bal</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseCrime"
+                      aria-expanded="true"
+                      aria-controls="collapseCrime"
+                    >
+                      <h5 class="command-name text-primary">Crime</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseCrime"
+                      class="collapse hidden"
+                      aria-labelledby="headingCrime"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>crime</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseDaily"
+                      aria-expanded="true"
+                      aria-controls="collapseDaily"
+                    >
+                      <h5 class="command-name text-primary">Daily</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseDaily"
+                      class="collapse hidden"
+                      aria-labelledby="headingDaily"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>daily</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Alias
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseGivemoney"
+                      aria-expanded="true"
+                      aria-controls="collapseGivemoney"
+                    >
+                      <h5 class="command-name text-primary">Givemoney</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseGivemoney"
+                      class="collapse hidden"
+                      aria-labelledby="headingGivemoney"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>givemoney</b> [@mentions/userid] [bet amount]</code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            Maximum bet amount is 40000
+                          </li>
+                          <li>
+                            Minimum bet amount is 1
+                          </li>
+                          <li>
+                            If bet amount is <code>all</code> you will bet all
+                            your money incase it less than 40000. If you money
+                            larger than 40000 <code>all</code> will bet 40000
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseLeaderboard"
+                      aria-expanded="true"
+                      aria-controls="collapseLeaderboard"
+                    >
+                      <h5 class="command-name text-primary">Leaderboard</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseLeaderboard"
+                      class="collapse hidden"
+                      aria-labelledby="headingLeaderboard"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>leaderboard</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseMath"
+                      aria-expanded="true"
+                      aria-controls="collapseMath"
+                    >
+                      <h5 class="command-name text-primary">Math</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseMath"
+                      class="collapse hidden"
+                      aria-labelledby="headingMath"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>math</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseSlut"
+                      aria-expanded="true"
+                      aria-controls="collapseSlut"
+                    >
+                      <h5 class="command-name text-primary">Slut</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseSlut"
+                      class="collapse hidden"
+                      aria-labelledby="headingSlut"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>slut</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Alias</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div
+                      class="card-header collapse-card"
+                      data-toggle="collapse"
+                      data-target="#collapseWork"
+                      aria-expanded="true"
+                      aria-controls="collapseWork"
+                    >
+                      <h5 class="command-name text-primary">Work</h5>
+                      <span class="badge badge-primary">ecomoney</span>
+                      <p>
+                        Command Description
+                      </p>
+                    </div>
+                    <div
+                      id="collapseWork"
+                      class="collapse hidden"
+                      aria-labelledby="headingWork"
+                      data-parent="#accordion"
+                    >
+                      <div class="card-body">
+                        <h6>Usage</h6>
+                        <code>p.<b>work</b></code>
+                        <hr />
+                        <h6>Alias</h6>
+                        <code><b>No Aliases</b></code>
+                        <hr />
+                        <h6>Permission</h6>
+                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                        <hr />
+                        <h6><b class="note-bullet">*</b> Note</h6>
+                        <ul class="note">
+                          <li>
+                            No Note
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <section class="docs-section" id="images">
+                    <section class="docs-section" id="images">
+                      <h2 class="section-heading">
+                        <i class="far fa-images"></i> Images
+                      </h2>
+                      <p>
+                        Group Command Description Here
+                      </p>
+                      <div id="accordion">
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseAvatar"
+                            aria-expanded="true"
+                            aria-controls="collapseAvatar"
+                          >
+                            <h5 class="command-name text-primary">Avatar</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseAvatar"
+                            class="collapse hidden"
+                            aria-labelledby="headingAvatar"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>avatar</b></code>
+                              <code>p.<b>avatar</b> [@mentions/userid]</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIcat"
+                            aria-expanded="true"
+                            aria-controls="collapseIcat"
+                          >
+                            <h5 class="command-name text-primary">Icat</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIcat"
+                            class="collapse hidden"
+                            aria-labelledby="headingIcat"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>icat</b></code>
+                              <code>p.<b>icat</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIcry"
+                            aria-expanded="true"
+                            aria-controls="collapseIcry"
+                          >
+                            <h5 class="command-name text-primary">Icry</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIcry"
+                            class="collapse hidden"
+                            aria-labelledby="headingIcry"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>icry</b></code>
+                              <code>p.<b>icry</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIcuddle"
+                            aria-expanded="true"
+                            aria-controls="collapseIcuddle"
+                          >
+                            <h5 class="command-name text-primary">Icuddle</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIcuddle"
+                            class="collapse hidden"
+                            aria-labelledby="headingIcuddle"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>icuddle</b></code>
+                              <code>p.<b>icuddle</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIdog"
+                            aria-expanded="true"
+                            aria-controls="collapseIdog"
+                          >
+                            <h5 class="command-name text-primary">Idog</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIdog"
+                            class="collapse hidden"
+                            aria-labelledby="headingIdog"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>idog</b></code>
+                              <code>p.<b>idog</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIhug"
+                            aria-expanded="true"
+                            aria-controls="collapseIhug"
+                          >
+                            <h5 class="command-name text-primary">Ihug</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIhug"
+                            class="collapse hidden"
+                            aria-labelledby="headingIhug"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ihug</b></code>
+                              <code>p.<b>ihug</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIkick"
+                            aria-expanded="true"
+                            aria-controls="collapseIkick"
+                          >
+                            <h5 class="command-name text-primary">Ikick</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIkick"
+                            class="collapse hidden"
+                            aria-labelledby="headingIkick"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ikick</b></code>
+                              <code>p.<b>ikick</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIkiss"
+                            aria-expanded="true"
+                            aria-controls="collapseIkiss"
+                          >
+                            <h5 class="command-name text-primary">Ikiss</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIkiss"
+                            class="collapse hidden"
+                            aria-labelledby="headingIkiss"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ikiss</b></code>
+                              <code>p.<b>ikiss</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIkitten"
+                            aria-expanded="true"
+                            aria-controls="collapseIkitten"
+                          >
+                            <h5 class="command-name text-primary">Ikitten</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIkitten"
+                            class="collapse hidden"
+                            aria-labelledby="headingIkitten"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ikitten</b></code>
+                              <code>p.<b>ikitten</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIpat"
+                            aria-expanded="true"
+                            aria-controls="collapseIpat"
+                          >
+                            <h5 class="command-name text-primary">Ipat</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIpat"
+                            class="collapse hidden"
+                            aria-labelledby="headingIpat"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ipat</b></code>
+                              <code>p.<b>ipat</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIpunch"
+                            aria-expanded="true"
+                            aria-controls="collapseIpunch"
+                          >
+                            <h5 class="command-name text-primary">Ipunch</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIpunch"
+                            class="collapse hidden"
+                            aria-labelledby="headingIpunch"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ipunch</b></code>
+                              <code>p.<b>ipunch</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIpuppy"
+                            aria-expanded="true"
+                            aria-controls="collapseIpuppy"
+                          >
+                            <h5 class="command-name text-primary">Ipuppy</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIpuppy"
+                            class="collapse hidden"
+                            aria-labelledby="headingIpuppy"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>ipuppy</b></code>
+                              <code>p.<b>ipuppy</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div
+                            class="card-header collapse-card"
+                            data-toggle="collapse"
+                            data-target="#collapseIslap"
+                            aria-expanded="true"
+                            aria-controls="collapseIslap"
+                          >
+                            <h5 class="command-name text-primary">Islap</h5>
+                            <span class="badge badge-primary">images</span>
+                            <p>
+                              Command Description
+                            </p>
+                          </div>
+                          <div
+                            id="collapseIslap"
+                            class="collapse hidden"
+                            aria-labelledby="headingIslap"
+                            data-parent="#accordion"
+                          >
+                            <div class="card-body">
+                              <h6>Usage</h6>
+                              <code>p.<b>islap</b></code>
+                              <code>p.<b>islap</b> @mentions</code>
+                              <hr />
+                              <h6>Alias</h6>
+                              <code><b>No Alias</b></code>
+                              <hr />
+                              <h6>Permission</h6>
+                              <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                              <hr />
+                              <h6><b class="note-bullet">*</b> Note</h6>
+                              <ul class="note">
+                                <li>
+                                  No Note
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                      <section class="docs-section" id="soundboard">
+                        <section class="docs-section" id="soundboard">
+                          <h2 class="section-heading">
+                            <i class="fas fa-volume-up"></i> SoundBoard
+                          </h2>
+                          <p>
+                            Group Command Description Here
+                          </p>
+                          <div id="accordion">
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                              >
+                                <h5 class="command-name text-primary">Balance</h5>
+                                <span class="badge badge-primary">ecomoney</span>
+                                <p>
+                                  Check Account Money
+                                </p>
+                              </div>
+                              <div
+                                id="collapseOne"
+                                class="collapse hidden"
+                                aria-labelledby="headingOne"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>balance</b></code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>bal</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      No Note
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseTwo"
+                                aria-expanded="true"
+                                aria-controls="collapseTwo"
+                              >
+                                <h5 class="command-name text-primary">Coin Flip</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Flips a coin , when it landing you guess heads or tails
+                                </p>
+                              </div>
+                              <div
+                                id="collapseTwo"
+                                class="collapse hidden"
+                                aria-labelledby="headingTwo"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>cf</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseThree"
+                                aria-expanded="true"
+                                aria-controls="collapseThree"
+                              >
+                                <h5 class="command-name text-primary">Lottery</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseThree"
+                                class="collapse hidden"
+                                aria-labelledby="headingThree"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>cf</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseFour"
+                                aria-expanded="true"
+                                aria-controls="collapseFour"
+                              >
+                                <h5 class="command-name text-primary">Baucua</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseFour"
+                                class="collapse hidden"
+                                aria-labelledby="headingFour"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>baucua</b> [bet amount] [bau/cua/ca/ga/tom/nai]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>bc</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseFive"
+                                aria-expanded="true"
+                                aria-controls="collapseFive"
+                              >
+                                <h5 class="command-name text-primary">RPS</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseFive"
+                                class="collapse hidden"
+                                aria-labelledby="headingFive"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>rps</b> [bet amount] [kéo/búa/bao]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>No Alias</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseSix"
+                                aria-expanded="true"
+                                aria-controls="collapseSix"
+                              >
+                                <h5 class="command-name text-primary">Slot</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseSix"
+                                class="collapse hidden"
+                                aria-labelledby="headingSix"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>slot</b> [bet amount]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>No Alias</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseSeven"
+                                aria-expanded="true"
+                                aria-controls="collapseSeven"
+                              >
+                                <h5 class="command-name text-primary">Drop</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseSeven"
+                                class="collapse hidden"
+                                aria-labelledby="headingSeven"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>drop</b> [bet amount]</code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>No Alias</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div
+                                class="card-header collapse-card"
+                                data-toggle="collapse"
+                                data-target="#collapseEight"
+                                aria-expanded="true"
+                                aria-controls="collapseEight"
+                              >
+                                <h5 class="command-name text-primary">Pick</h5>
+                                <span class="badge badge-primary">gambling</span>
+                                <p>
+                                  Command Description
+                                </p>
+                              </div>
+                              <div
+                                id="collapseEight"
+                                class="collapse hidden"
+                                aria-labelledby="headingEight"
+                                data-parent="#accordion"
+                              >
+                                <div class="card-body">
+                                  <h6>Usage</h6>
+                                  <code>p.<b>pick</b></code>
+                                  <hr />
+                                  <h6>Alias</h6>
+                                  <code><b>No Aliases</b></code>
+                                  <hr />
+                                  <h6>Permission</h6>
+                                  <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                  <hr />
+                                  <h6><b class="note-bullet">*</b> Note</h6>
+                                  <ul class="note">
+                                    <li>
+                                      Maximum bet amount is 40000
+                                    </li>
+                                    <li>
+                                      Minimum bet amount is 1
+                                    </li>
+                                    <li>
+                                      If bet amount is <code>all</code> you will bet all
+                                      your money incase it less than 40000. If you money
+                                      larger than 40000 <code>all</code> will bet 40000
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+
+                            <section class="docs-section" id="utilities">
+                              <section class="docs-section" id="utilities">
+                                <h2 class="section-heading">
+                                  <i class="fas fa-tools"></i> Utilities
+                                </h2>
+                                <p>
+                                  Group Command Description Here
+                                </p>
+                                <div id="accordion">
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseOne"
+                                      aria-expanded="true"
+                                      aria-controls="collapseOne"
+                                    >
+                                      <h5 class="command-name text-primary">Balance</h5>
+                                      <span class="badge badge-primary">ecomoney</span>
+                                      <p>
+                                        Check Account Money
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseOne"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingOne"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>balance</b></code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>bal</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            No Note
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseTwo"
+                                      aria-expanded="true"
+                                      aria-controls="collapseTwo"
+                                    >
+                                      <h5 class="command-name text-primary">Coin Flip</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Flips a coin , when it landing you guess heads or tails
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseTwo"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingTwo"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>cf</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseThree"
+                                      aria-expanded="true"
+                                      aria-controls="collapseThree"
+                                    >
+                                      <h5 class="command-name text-primary">Lottery</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseThree"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingThree"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>cf</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseFour"
+                                      aria-expanded="true"
+                                      aria-controls="collapseFour"
+                                    >
+                                      <h5 class="command-name text-primary">Baucua</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseFour"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingFour"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>baucua</b> [bet amount] [bau/cua/ca/ga/tom/nai]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>bc</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseFive"
+                                      aria-expanded="true"
+                                      aria-controls="collapseFive"
+                                    >
+                                      <h5 class="command-name text-primary">RPS</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseFive"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingFive"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>rps</b> [bet amount] [kéo/búa/bao]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>No Alias</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseSix"
+                                      aria-expanded="true"
+                                      aria-controls="collapseSix"
+                                    >
+                                      <h5 class="command-name text-primary">Slot</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseSix"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingSix"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>slot</b> [bet amount]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>No Alias</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseSeven"
+                                      aria-expanded="true"
+                                      aria-controls="collapseSeven"
+                                    >
+                                      <h5 class="command-name text-primary">Drop</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseSeven"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingSeven"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>drop</b> [bet amount]</code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>No Alias</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="card">
+                                    <div
+                                      class="card-header collapse-card"
+                                      data-toggle="collapse"
+                                      data-target="#collapseEight"
+                                      aria-expanded="true"
+                                      aria-controls="collapseEight"
+                                    >
+                                      <h5 class="command-name text-primary">Pick</h5>
+                                      <span class="badge badge-primary">gambling</span>
+                                      <p>
+                                        Command Description
+                                      </p>
+                                    </div>
+                                    <div
+                                      id="collapseEight"
+                                      class="collapse hidden"
+                                      aria-labelledby="headingEight"
+                                      data-parent="#accordion"
+                                    >
+                                      <div class="card-body">
+                                        <h6>Usage</h6>
+                                        <code>p.<b>pick</b></code>
+                                        <hr />
+                                        <h6>Alias</h6>
+                                        <code><b>No Aliases</b></code>
+                                        <hr />
+                                        <h6>Permission</h6>
+                                        <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                        <hr />
+                                        <h6><b class="note-bullet">*</b> Note</h6>
+                                        <ul class="note">
+                                          <li>
+                                            Maximum bet amount is 40000
+                                          </li>
+                                          <li>
+                                            Minimum bet amount is 1
+                                          </li>
+                                          <li>
+                                            If bet amount is <code>all</code> you will bet all
+                                            your money incase it less than 40000. If you money
+                                            larger than 40000 <code>all</code> will bet 40000
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  <section class="docs-section" id="moderation">
+                                    <section class="docs-section" id="moderation">
+                                      <h2 class="section-heading">
+                                        <i class="fas fa-user-shield"></i> Moderation
+                                      </h2>
+                                      <p>
+                                        Group Command Description Here
+                                      </p>
+                                      <div id="accordion">
+                                        <div class="card">
+                                          <div
+                                            class="card-header collapse-card"
+                                            data-toggle="collapse"
+                                            data-target="#collapseBan"
+                                            aria-expanded="true"
+                                            aria-controls="collapseBan"
+                                          >
+                                            <h5 class="command-name text-primary">Ban</h5>
+                                            <span class="badge badge-primary">Moderation</span>
+                                            <p>
+                                              Command Description
+                                            </p>
+                                          </div>
+                                          <div
+                                            id="collapseBan"
+                                            class="collapse hidden"
+                                            aria-labelledby="headingBan"
+                                            data-parent="#accordion"
+                                          >
+                                            <div class="card-body">
+                                              <h6>Usage</h6>
+                                              <code>p.<b>ban</b> [@mentions/userid]</code>
+                                              <hr />
+                                              <h6>Alias</h6>
+                                              <code><b>No Alias</b></code>
+                                              <hr />
+                                              <h6>Permission</h6>
+                                              <code><b>BAN_MEMBERS</b></code>
+                                              <hr />
+                                              <h6><b class="note-bullet">*</b> Note</h6>
+                                              <ul class="note">
+                                                <li>
+                                                  No Note
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div
+                                            class="card-header collapse-card"
+                                            data-toggle="collapse"
+                                            data-target="#collapseKick"
+                                            aria-expanded="true"
+                                            aria-controls="collapseKick"
+                                          >
+                                            <h5 class="command-name text-primary">Kick</h5>
+                                            <span class="badge badge-primary">moderation</span>
+                                            <p>
+                                              Command Description
+                                            </p>
+                                          </div>
+                                          <div
+                                            id="collapseKick"
+                                            class="collapse hidden"
+                                            aria-labelledby="headingKick"
+                                            data-parent="#accordion"
+                                          >
+                                            <div class="card-body">
+                                              <h6>Usage</h6>
+                                              <code>p.<b>kick</b> [@mentions/userid]</code>
+                                              <hr />
+                                              <h6>Alias</h6>
+                                              <code><b>No Aliases</b></code>
+                                              <hr />
+                                              <h6>Permission</h6>
+                                              <code><b>KICK_MEMBERS</b></code>
+                                              <hr />
+                                              <h6><b class="note-bullet">*</b> Note</h6>
+                                              <ul class="note">
+                                                <li>
+                                                  No Note
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="card">
+                                          <div
+                                            class="card-header collapse-card"
+                                            data-toggle="collapse"
+                                            data-target="#collapseSoft_Ban"
+                                            aria-expanded="true"
+                                            aria-controls="collapseSoft_Ban"
+                                          >
+                                            <h5 class="command-name text-primary">Soft Ban</h5>
+                                            <span class="badge badge-primary">moderation</span>
+                                            <p>
+                                              Command Description
+                                            </p>
+                                          </div>
+                                          <div
+                                            id="collapseSoft_Ban"
+                                            class="collapse hidden"
+                                            aria-labelledby="headingSoft_Ban"
+                                            data-parent="#accordion"
+                                          >
+                                            <div class="card-body">
+                                              <h6>Usage</h6>
+                                              <code>p.<b>soft_ban</b> [@mentions/userid]</code>
+                                              <hr />
+                                              <h6>Alias</h6>
+                                              <code><b>No Aliases</b></code>
+                                              <hr />
+                                              <h6>Permission</h6>
+                                              <code><b>BAN_MEMBERS</b></code>
+                                              <hr />
+                                              <h6><b class="note-bullet">*</b> Note</h6>
+                                              <ul class="note">
+                                                <li>
+                                                  No Note
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+
+                                        <section class="docs-section" id="social">
+                                          <section class="docs-section" id="social">
+                                            <h2 class="section-heading">
+                                              <i class="fas fa-users"></i> Social
+                                            </h2>
+                                            <p>
+                                              Group Command Description Here
+                                            </p>
+                                            <div id="accordion">
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseOne"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseOne"
+                                                >
+                                                  <h5 class="command-name text-primary">Breakup</h5>
+                                                  <span class="badge badge-primary">social</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseOne"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingOne"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>breakup</b></code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>No Alias</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        No Note
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseTwo"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseTwo"
+                                                >
+                                                  <h5 class="command-name text-primary">Coin Flip</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Flips a coin , when it landing you guess heads or tails
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseTwo"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingTwo"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>cf</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseThree"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseThree"
+                                                >
+                                                  <h5 class="command-name text-primary">Lottery</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseThree"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingThree"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>coin_flip</b> [bet amount] [t/h]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>cf</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseFour"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseFour"
+                                                >
+                                                  <h5 class="command-name text-primary">Baucua</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseFour"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingFour"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>baucua</b> [bet amount] [bau/cua/ca/ga/tom/nai]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>bc</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseFive"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseFive"
+                                                >
+                                                  <h5 class="command-name text-primary">RPS</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseFive"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingFive"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>rps</b> [bet amount] [kéo/búa/bao]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>No Alias</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseSix"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseSix"
+                                                >
+                                                  <h5 class="command-name text-primary">Slot</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseSix"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingSix"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>slot</b> [bet amount]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>No Alias</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseSeven"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseSeven"
+                                                >
+                                                  <h5 class="command-name text-primary">Drop</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseSeven"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingSeven"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>drop</b> [bet amount]</code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>No Alias</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="card">
+                                                <div
+                                                  class="card-header collapse-card"
+                                                  data-toggle="collapse"
+                                                  data-target="#collapseEight"
+                                                  aria-expanded="true"
+                                                  aria-controls="collapseEight"
+                                                >
+                                                  <h5 class="command-name text-primary">Pick</h5>
+                                                  <span class="badge badge-primary">gambling</span>
+                                                  <p>
+                                                    Command Description
+                                                  </p>
+                                                </div>
+                                                <div
+                                                  id="collapseEight"
+                                                  class="collapse hidden"
+                                                  aria-labelledby="headingEight"
+                                                  data-parent="#accordion"
+                                                >
+                                                  <div class="card-body">
+                                                    <h6>Usage</h6>
+                                                    <code>p.<b>pick</b></code>
+                                                    <hr />
+                                                    <h6>Alias</h6>
+                                                    <code><b>No Aliases</b></code>
+                                                    <hr />
+                                                    <h6>Permission</h6>
+                                                    <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                    <hr />
+                                                    <h6><b class="note-bullet">*</b> Note</h6>
+                                                    <ul class="note">
+                                                      <li>
+                                                        Maximum bet amount is 40000
+                                                      </li>
+                                                      <li>
+                                                        Minimum bet amount is 1
+                                                      </li>
+                                                      <li>
+                                                        If bet amount is <code>all</code> you will bet all
+                                                        your money incase it less than 40000. If you money
+                                                        larger than 40000 <code>all</code> will bet 40000
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <section class="docs-section" id="other">
+                                                <section class="docs-section" id="other">
+                                                  <h2 class="section-heading">
+                                                    <i class="fas fa-book-reader"></i> Other
+                                                  </h2>
+                                                  <p>
+                                                    Group Command Description Here
+                                                  </p>
+                                                  <div id="accordion">
+                                                    <div class="card">
+                                                      <div
+                                                        class="card-header collapse-card"
+                                                        data-toggle="collapse"
+                                                        data-target="#collapseConfession"
+                                                        aria-expanded="true"
+                                                        aria-controls="collapseConfession"
+                                                      >
+                                                        <h5 class="command-name text-primary">Confession</h5>
+                                                        <span class="badge badge-primary">other</span>
+                                                        <p>
+                                                          Send confession to specific channel
+                                                        </p>
+                                                      </div>
+                                                      <div
+                                                        id="collapseConfession"
+                                                        class="collapse hidden"
+                                                        aria-labelledby="headingConfession"
+                                                        data-parent="#accordion"
+                                                      >
+                                                        <div class="card-body">
+                                                          <h6>Usage</h6>
+                                                          <code>p.<b>confession</b></code>
+                                                          <hr />
+                                                          <h6>Alias</h6>
+                                                          <code><b>No Alias</b></code>
+                                                          <hr />
+                                                          <h6>Permission</h6>
+                                                          <code><b>SEND_MESSAGE</b> , <b>EMBED_LINKS</b></code>
+                                                          <hr />
+                                                          <h6><b class="note-bullet">*</b> Note</h6>
+                                                          <ul class="note">
+                                                            <li>
+                                                              No Note
+                                                            </li>
+                                                          </ul>
+                                                          </div>
+
+
+
           </article>
           <article class="docs-article" id="section-9">
             <header class="docs-header">
