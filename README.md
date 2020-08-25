@@ -1,1 +1,1 @@
-# phoenix-docs
+# Phoenix BoT Documentation
